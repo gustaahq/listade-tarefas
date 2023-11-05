@@ -1,0 +1,50 @@
+<?php
+	require "conexao.php";
+	require "login.php";
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JS</title>
+
+    <link rel="stylesheet" href="login.css">
+
+
+</head>
+<body>
+   <form class="login">
+ <form action="login.php" method="POST">
+    <h2>Login</h2>
+    <div class="box-user">
+        <input type="text" placeholder="Login" name="login" required>
+        <label></label>
+    </div>
+    <div class="box-user">
+        <input type="password" placeholder="Senha" name="senha" required>
+        <label></label>
+    </div>
+    <input type="submit"  onclick="logar();" name="enviar">    
+ </form>
+
+<!--<script>
+
+    function logar(){
+
+     var login = document.getElementById('login').value;
+     var senha = document.getElementById('senha').value;
+
+     if(login == "admin" && senha == 'admin'){
+        alert('usuário e senha corretos');
+        location.href = "home.html"
+     }else{
+        alert('usuário ou senha incorretos');
+     }
+
+    }
+  </script>
+ -->
+ 
+</body>
+</html>
